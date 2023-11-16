@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Minesweeper</title>
+	<link rel="shortcut icon" href="logo.png" type="image/x-icon">
+	<link href="../../lib/os-gui/layout.css" rel="stylesheet" type="text/css">
+	<link href="../../lib/os-gui/windows-98.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="../../images/icons/minesweeper-16x16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="../../images/icons/minesweeper-32x32.png" sizes="32x32" type="image/png">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta property="og:image" content="https://i.postimg.cc/pTv3wkSR/flappybird.png" />
+	<meta property="og:site_name" content="Windows Minesweeper Game Online" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Flappy Bird game" />
+	<meta property="og:url" content="https://i.postimg.cc/SN55LVz2/Screenshot-2023-11-17-023310.png" />
+	<meta property="og:description" content="Popular windows minesweeper game is now in web." />
+	<meta name="description" content="windows minesweeper game with HTML5.">
+	<meta name="keywords" content="Windows Minesweeper HTML5 JavaScript">
+	<meta name="author" content="Sumalya Chatterjee">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<script src="../../lib/os-gui/MenuBar.js"></script>
+	<script src="../../lib/jquery.min.js"></script>
+	<script src="../../lib/os-gui/$Window.js"></script>
+	<script src="../../src/msgbox.js"></script>
+	<script>defaultMessageBoxTitle = "Minesweeper";</script>
+	<script src="lib/rocket.12.06.js"></script>
+	<script src="lib/seedrandom.js"></script>
+	<script src="lib/konami.js"></script>
+	<script src="menus.js"></script>
+	<script src="minesweeper.js"></script>
+	<script src="tile.js"></script>
+	<script src="face.js"></script>
+	<script src="grid.js"></script>
+	<script src="ssd.js"></script>
+	<script src="fun.js"></script>
+	<style>
+		body,
+		#play_area {
+			margin: 0;
+			padding: 0;
+			background-color: #bdbdbd;
+			margin: auto;
+		}
+
+		* {
+			image-rendering: crisp-edges;
+			image-rendering: pixelated;
+		}
+	</style>
+</head>
+<script>
+	// Function to block the right-click context menu
+	function blockContextMenu(event) {
+		event.preventDefault();
+	}
+
+	// Attach the blockContextMenu function to the contextmenu event
+	window.addEventListener("contextmenu", blockContextMenu);
+</script>
+
+<body>
+	<div id="play_area"></div>
+</body>
+
+</html>
